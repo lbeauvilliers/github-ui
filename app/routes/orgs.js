@@ -1,12 +1,20 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  favorites: Ember.inject.service(),
+
   model() {
     return [
       {id: "Facebook"},
       {id: "Netflix"},
       {id: "Intercom"},
-      {id: "Ember.js"},
+      {id: "Emberjs"},
     ];
-  }
+  },
+
+  actions: {
+     addToFavorites(org) {
+       this.get('favorites').favoriteItem(org);
+     }
+  },
 });
