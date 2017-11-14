@@ -6,9 +6,10 @@ export default Ember.Route.extend({
   model() {
     return [
       {id: "Facebook"},
-      {id: "Netflix"},
+      {id: "Microsoft"},
       {id: "Intercom"},
-      {id: "Emberjs"},
+      {id: "ember-cli"},
+      {id: "emberjs"},
     ];
   },
 

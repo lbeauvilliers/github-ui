@@ -4,10 +4,10 @@ Error: File to import not found or unreadable: bourbon.
 
 1: @import "bourbon";
 2: 
-3: .repo-nav {
-4:   list-style: none;
-5:   li {
-6:     display: inline-block;
+3: * {
+4:   font-family: Arial;
+5: }
+6: 
 
 Backtrace:
 app.scss:1
@@ -55,4 +55,4 @@ app.scss:1
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: bourbon.\A         on line 1 of app.scss\A \A 1: @import \"bourbon\";\A 2: \A 3: .repo-nav {\A 4:   list-style: none;\A 5:   li {\A 6:     display: inline-block;"; }
+  content: "Error: File to import not found or unreadable: bourbon.\A         on line 1 of app.scss\A \A 1: @import \"bourbon\";\A 2: \A 3: * {\A 4:   font-family: Arial;\A 5: }\A 6: "; }

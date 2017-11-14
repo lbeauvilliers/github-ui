@@ -1,9 +1,8 @@
 <h3>Contributors</h3>
 <ul>
-  <li>rwjblue</li>
-  <li>wagenet</li>
-  <li>stefanpenner</li>
-  <li>wycats</li>
+  {{#each content as |contributor|}}
+    <li><img src={{contributor.avatar_url}} height='30'> <a target='_blank' href={{contributor.html_url}}>{{contributor.login}}</a></li>
+  {{/each}}
 </ul>
 
 {{outlet}}
