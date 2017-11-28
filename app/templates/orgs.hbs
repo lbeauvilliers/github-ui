@@ -1,10 +1,9 @@
 <h2>Orgs</h2>
 <ul>
   {{#each content as |org|}}
-    <li>
-      <span {{action 'addToFavorites' org}}>[Favorite] </span>
-      {{link-to org.id 'org' org.id}}
-    </li>
+    {{github-org
+      org=org
+      add-to-favorites='addToFavorites'}}
   {{/each}}
 </ul>
 
