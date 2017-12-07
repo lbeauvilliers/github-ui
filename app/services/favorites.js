@@ -14,5 +14,10 @@ export default Ember.Service.extend({
   favoriteItem(item) {
     this.get('items').addObject(item);
     this.log();
+  },
+
+  unfavoriteItem(item) {
+    this.get('items').removeObject(item);
+    this.log();
   }
 });
