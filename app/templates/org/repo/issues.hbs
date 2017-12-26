@@ -1,7 +1,7 @@
 <h3>Issues</h3>
 <ul>
   {{#each content as |issue|}}
-    <li><a target='_blank' href={{issue.html_url}}>{{issue.title}}</a></li>
+    <li data-test-issue><a target='_blank' href={{issue.html_url}}>{{issue.title}}</a></li>
   {{/each}}
 </ul>
 

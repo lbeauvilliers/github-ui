@@ -2,6 +2,7 @@
 <ul>
   {{#each content as |org|}}
     {{github-org
+      data-test-github-org
       org=org
       favorite-was-clicked='favoriteWasClicked'}}
   {{/each}}

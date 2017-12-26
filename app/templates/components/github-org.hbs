@@ -1,7 +1,5 @@
-<span {{action 'favoriteWasClicked'}}>
+<span data-test-favorite-button {{action 'favoriteWasClicked'}}>
   {{if isFavorited '[Unfavorite] ' '[Favorite] '}}
 </span>
 
 {{link-to org.id 'org' org.id}}
-
-{{yield}}
